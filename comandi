@@ -36,3 +36,10 @@ WHERE LOCATE ('E', name) LIKE 1
 
 SELECT *
 FROM `ospiti`
+WHERE (YEAR(NOW()) - YEAR(date_of_birth)) < 30
+
+
+8 Quesito
+
+SELECT *
+FROM 
