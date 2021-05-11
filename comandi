@@ -30,3 +30,6 @@ WHERE room_number = 1
 SELECT *
 FROM `ospiti`
 WHERE LOCATE ('E', name) LIKE 1
+
+
+7 Quesito
