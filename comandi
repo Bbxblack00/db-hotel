@@ -8,7 +8,13 @@ FROM `ospiti`
 
 SELECT *
 FROM `ospiti`
-WHERE `document type` LIKE `CI`
+WHERE `document type` LIKE 'CI'
 
 
 3 Quesito
+
+SELECT *
+FROM `paganti`
+WHERE ospite_id != null
+
+4 Quesito
