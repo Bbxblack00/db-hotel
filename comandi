@@ -1,0 +1,14 @@
+1 Quesito
+
+SELECT *
+FROM `ospiti`
+
+
+2 Quesito
+
+SELECT *
+FROM `ospiti`
+WHERE `document type` LIKE `CI`
+
+
+3 Quesito
