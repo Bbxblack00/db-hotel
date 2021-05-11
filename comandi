@@ -33,3 +33,6 @@ WHERE LOCATE ('E', name) LIKE 1
 
 
 7 Quesito
+
+SELECT *
+FROM `ospiti`
