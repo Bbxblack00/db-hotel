@@ -26,3 +26,7 @@ WHERE room_number = 1
 
 
 5 Quesito
+
+SELECT *
+FROM `ospiti`
+WHERE LOCATE ('E', name) LIKE 1
