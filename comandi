@@ -17,4 +17,12 @@ SELECT *
 FROM `paganti`
 WHERE ospite_id != null
 
+
 4 Quesito
+
+SELECT *
+FROM `stanze`
+WHERE room_number = 1
+
+
+5 Quesito
