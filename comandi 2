@@ -35,3 +35,12 @@ FROM prenotazioni_has_ospiti
         ON ospiti.id = prenotazioni_has_ospiti.ospite_id
         GROUP BY ospiti.id
         HAVING num_prenotazioni > 2
+
+2 Quesito
+
+SELECT *
+FROM ospiti
+    LEFT JOIN prenotazioni_has_ospiti 
+        ON ospiti.id = prenotazioni_has_ospiti.ospite_id
+    JOIN prenotazioni
+        ON prenotazioni.id = prenotazioni_has_ospiti.prenotazione_id
