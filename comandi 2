@@ -1,0 +1,19 @@
+
+PRIMO FILE
+1 Quesito
+
+
+
+
+
+
+
+//ULTIMO FILE\\
+1 Quesito
+
+SELECT ospiti.name, COUNT(prenotazioni_has_ospiti.ospite_id) AS 'num_prenotazioni'
+FROM prenotazioni_has_ospiti
+    JOIN ospiti
+        ON ospiti.id = prenotazioni_has_ospiti.ospite_id
+        GROUP BY ospiti.id
+        HAVING num_prenotazioni > 2
