@@ -2,8 +2,26 @@
 PRIMO FILE
 1 Quesito
 
+// da sistemare
+
+SELECT COUNT(ospiti.date_of_birth)
+FROM ospiti
+ORDER BY date_of_birth
+
+2 Quesito
+
+SELECT pagamenti.status, SUM(pagamenti.price)
+FROM pagamenti
+GROUP BY status
 
 
+3 Quesito
+
+SELECT stanza_id, COUNT(stanza_id)
+FROM prenotazioni
+GROUP BY stanza_id
+
+4 Quesito
 
 
 
