@@ -26,6 +26,22 @@ GROUP BY stanza_id
 
 
 
+5 Quesito
+
+SELECT *
+FROM ospiti
+  JOIN prenotazioni_has_ospiti
+    ON ospiti.id = prenotazioni_has_ospiti.ospite_id
+GROUP BY ospiti.id
+HAVING COUN(*) = (
+  SELECT COUNT(*)
+  FROM ospiti
+    JOIN
+)
+
+
+
+
 //ULTIMO FILE\\
 1 Quesito
 
@@ -40,7 +56,7 @@ FROM prenotazioni_has_ospiti
 
 SELECT *
 FROM ospiti
-    LEFT JOIN prenotazioni_has_ospiti 
+    LEFT JOIN prenotazioni_has_ospiti
         ON ospiti.id = prenotazioni_has_ospiti.ospite_id
     JOIN prenotazioni
         ON prenotazioni.id = prenotazioni_has_ospiti.prenotazione_id
